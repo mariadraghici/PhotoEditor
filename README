@@ -1,0 +1,33 @@
+Draghici Maria-Ana
+grupa 312CA
+
+	Am citit fiecare comanda si am salvat-o intr-o matrice, fiecare cuvant
+pe o linie.
+	Pentru functia load, am salvat numele fisierului, daca exista, pentru 
+a-l putea folosi mai incolo. Pentru cazul in care nu exista fisierul, am
+folosit o variabila care va determina toate functiile sa afiseze eroarea
+de imagine neincarcata. Daca operaita de load a fost finalizata cu succes,
+atunci am dat si select all, fara sa afisez nimic.
+	Pentru functia select all am schimbat coordonatele in (0,0) si dimen-
+siunile matricei.
+	Pentru select am verificat daca sunt corecte coordonatele. Daca nu sunt,
+in functie de caz, sunt afisate erorile caracteristice. In cazul in care
+coordonatele sunt valide, atunci verific ordinea lor si le salvez.
+	Pentru functia rotate, am luat-o pe doua cazuri. Primul caz este cand
+este selectata toata imaginea, deci rotirea se poate face atat pe selectie
+de nxn, cat si pe nxm. Pentru al doilea caz am verificat daca a fost selec-
+tata o submatrice patratica. Daca da, atunci am salvat submatricea intr-o
+alta matrice, am rotit-o, iar apoi am modificat elementele din matricea
+initiala. Am folosit un algoritm pe care l-am dedus care roteste matricea 
+cu 90 grade. Pentru fiecare multiplu de 90 am accesat functia de 
+(multiplu : 90) ori sau daca unghiul e c mins am dedus ca 90 = -270,
+270 = -90, -180 = 180, 360 = -360 = 0.
+	Pentru functia crop, am salvat submatricea selectata anterior si
+am reinitializat coordonatele cu (0,0) si dimensiunile matricei.
+	Pentru efectul sepia, am verificat prima data daca imaginea este
+color, afisand eroarea corespunzatoare in cazul in care nu este. Am calcu-
+lat noile valori pentru fiecare culoare, verificand daca nu intrece valoarea
+maxima. Daca o intrece, atunci pixelul primeste valoarea 255.
+	Analog pentru efectul grayscale.
+	Pentru functia save am verificat ce tip de fisier este si am schimbat
+in functia de cerinta de salvare, in fisier binar sau text.
